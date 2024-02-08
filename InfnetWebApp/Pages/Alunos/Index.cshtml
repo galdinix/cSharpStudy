@@ -1,0 +1,60 @@
+﻿@page "/"
+@model InfnetWebApp.Pages.Alunos.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno[0].Nome)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno[0].Endereco)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno[0].Telefone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno[0].Email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Aluno[0].DataNascimento)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Aluno) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Endereco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Telefone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataNascimento)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
