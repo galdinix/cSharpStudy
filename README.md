@@ -1,2 +1,2 @@
 # c-Study
-Aprendendo desenvolvimento web com .NET e gerenciamento de bases de dados, incluindo configuração de ambiente, ASP.NET Core e Entity Framework Core, com foco em projetos práticos para consolidar o aprendizado.
+ Desenvolvendo habilidades essenciais para escrever programas em C#, dominando elementos básicos, classes, objetos e os pilares da orientação a objetos. Além disso, explorarando arrays, arquivos CSV, recursos avançados, e aproveitando todo o potencial de delegates, events e lambdas, aprendendo, também, desenvolvimento web com .NET com RAZOR e gerenciamento de bases de dados, ASP.NET Core e Entity Framework Core, com foco em projetos práticos para consolidar o aprendizado.
